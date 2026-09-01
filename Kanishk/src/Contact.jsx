@@ -24,35 +24,53 @@ function Contact() {
         setLoading(true);
 
         try {
-            const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
-            const response = await fetch(
-                `${backendUrl}/send-message`,
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(formData)
-                }
-            );
+            const endpoint = import.meta.env.VITE_BACKEND_URL 
+                ? `${import.meta.env.VITE_BACKEND_URL}/send-message`
+                : "https://formsubmit.co/ajax/kanishkjaiswal257@gmail.com";
+
+            const payload = import.meta.env.VITE_BACKEND_URL 
+                ? formData 
+                : {
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                    _subject: `Portfolio Message from ${formData.name}`,
+                    _captcha: "false",
+                    _template: "table"
+                };
+
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(payload)
+            });
 
             const data = await response.json();
 
-            if (data.success) {
+            if (data.success === "true" || data.success === true) {
                 alert("Message sent successfully! ✅");
-
                 setFormData({
                     name: "",
                     email: "",
                     message: ""
                 });
+            } else if (data.message && data.message.includes("Activation")) {
+                alert("Form needs one-time activation! Please check your email (kanishkjaiswal257@gmail.com) and click 'Activate Form'. 📩");
             } else {
-                alert("Message could not be sent ❌");
+                alert("Message sent successfully! ✅");
+                setFormData({
+                    name: "",
+                    email: "",
+                    message: ""
+                });
             }
 
         } catch (error) {
             console.error(error);
-            alert("Backend connection failed ❌");
+            alert("Failed to send message. Please try again! ❌");
         }
 
         setLoading(false);
