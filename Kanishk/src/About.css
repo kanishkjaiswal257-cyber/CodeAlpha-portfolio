@@ -1,0 +1,230 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    padding: 100px 10%;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* Section number */
+.about>h6 {
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    color: #777;
+    text-transform: uppercase;
+}
+
+/* Main heading */
+.about>h2 {
+    margin-bottom: 30px;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    color: #111;
+}
+
+/* About paragraphs */
+.about>p {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #666;
+}
+
+/* Quote */
+.about>i {
+    display: inline-block;
+
+    margin: 20px 0;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #222;
+}
+
+
+/* =========================
+   STATISTICS SECTION
+========================= */
+
+.abc {
+    padding: 30px 10% 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   STATISTIC CARDS
+========================= */
+
+.Internship,
+.Achivments {
+    width: 260px;
+    height: 190px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #f7f8fc;
+
+    border: 1px solid #e1e3e8;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.35s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Top line */
+.Internship::before,
+.Achivments::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #111;
+}
+
+
+/* Numbers */
+.Internship h1,
+.Achivments h1 {
+    margin: 0 0 10px;
+
+    font-size: 55px;
+    font-weight: 700;
+
+    color: #111;
+}
+
+
+/* Card titles */
+.Internship h3,
+.Achivments h3 {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    color: #666;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.Internship:hover,
+.Achivments:hover {
+    transform: translateY(-10px);
+
+    background: #111;
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.Internship:hover h1,
+.Achivments:hover h1 {
+    color: #ffffff;
+}
+
+.Internship:hover h3,
+.Achivments:hover h3 {
+    color: #dddddd;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .about {
+        padding: 70px 6%;
+    }
+
+    .about>h2 {
+        font-size: 34px;
+    }
+
+    .about>p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about>i {
+        font-size: 16px;
+    }
+
+    .abc {
+        padding: 20px 6% 70px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .Internship,
+    .Achivments {
+        width: 85%;
+        max-width: 300px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .about>h2 {
+        font-size: 30px;
+    }
+
+    .about>h6 {
+        font-size: 12px;
+    }
+
+    .Internship,
+    .Achivments {
+        width: 90%;
+        height: 170px;
+    }
+
+    .Internship h1,
+    .Achivments h1 {
+        font-size: 48px;
+    }
+}
