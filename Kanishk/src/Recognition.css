@@ -1,0 +1,734 @@
+/* =========================================
+   RECOGNITION SECTION
+========================================= */
+
+.Recognition {
+    min-height: 45vh;
+    padding: 110px 8% 70px;
+
+    background: #f7f8fc;
+    color: #111;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   RECOGNITION HEADING
+========================================= */
+
+.Recognition h6 {
+    margin: 0 0 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #777;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   RECOGNITION SECTION
+========================================= */
+
+.recognition-section {
+    min-height: 45vh;
+    padding: 100px 8%;
+    background: #f7f8fc;
+    text-align: center;
+    color: #111827;
+}
+
+
+/* =========================================
+   SMALL SECTION LABEL
+========================================= */
+
+.recognition-section h6 {
+    margin: 0 0 15px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #6b7280;
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.recognition-section h2 {
+    margin: 0 0 45px;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111827;
+}
+
+.recognition-section h2 i {
+    font-style: italic;
+}
+
+
+/* =========================================
+   BUTTON CONTAINER
+========================================= */
+
+.recognition-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================================
+   RECOGNITION BUTTONS
+========================================= */
+
+.recognition-section button {
+    width: min(600px, 90%);
+    margin: 8px 0;
+    padding: 18px 25px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    background: #ffffff;
+    color: #1f2937;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.recognition-section button:hover {
+    transform: translateY(-5px);
+
+    border-color: #111827;
+
+    background: #111827;
+    color: #ffffff;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   CLICK EFFECT
+========================================= */
+
+.recognition-section button:active {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .recognition-section {
+        padding: 80px 5%;
+    }
+
+    .recognition-section h2 {
+        margin-bottom: 30px;
+    }
+
+    .recognition-section button {
+        width: 100%;
+        padding: 16px 18px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .recognition-section {
+        padding: 65px 20px;
+    }
+
+    .recognition-section h6 {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .recognition-section h2 {
+        font-size: 30px;
+    }
+
+    .recognition-section button {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+.Recognition h2 {
+    margin: 0 0 35px;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    color: #111;
+}
+
+.Recognition h2 i {
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   RECOGNITION STAT BUTTONS
+========================================= */
+
+.Recognition>button {
+    margin: 8px;
+    padding: 13px 22px;
+
+    border: 1px solid #e1e3e8;
+    border-radius: 30px;
+
+    background: #ffffff;
+    color: #333;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+    cursor: default;
+
+    transition: all 0.3s ease;
+}
+
+.Recognition>button:hover {
+    transform: translateY(-4px);
+
+    background: #111;
+    color: #fff;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   ACHIEVEMENT / CERTIFICATE SECTION
+========================================= */
+
+.zrchivment-section {
+    min-height: 70vh;
+
+    padding: 40px 8% 100px;
+
+    background: #f7f8fc;
+
+    color: #111;
+}
+
+
+/* =========================================
+   TABS
+========================================= */
+
+.tabs {
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.tabs button {
+    padding: 13px 25px;
+
+    border: 1px solid #e1e3e8;
+    border-radius: 30px;
+
+    background: #ffffff;
+
+    color: #555;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.tabs button:hover {
+    transform: translateY(-3px);
+
+    color: #111;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Active Tab */
+
+.tabs button.active {
+    background: #111;
+
+    color: #ffffff;
+
+    border-color: #111;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.card {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e4e9;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.card-top {
+    min-height: 180px;
+
+    padding: 30px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background: #111;
+
+    color: #ffffff;
+
+    position: relative;
+}
+
+
+/* Achievement Header */
+
+.achievement-top {
+    background: #111;
+}
+
+
+/* Certificate Header */
+
+.certificate-top {
+    background: #111;
+}
+
+
+/* =========================================
+   PRIZE / CERTIFICATE TITLE
+========================================= */
+
+.prize,
+.nptel {
+    font-size: 32px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   TROPHY
+========================================= */
+
+.trophy {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    font-size: 38px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover .trophy {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.card-content {
+    padding: 35px 40px 40px;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.date {
+    margin: 0 0 15px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #777;
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.card-content h1 {
+    margin: 0 0 10px;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #111;
+}
+
+.card-content h3 {
+    margin: 0 0 20px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #555;
+}
+
+
+/* =========================================
+   HORIZONTAL LINE
+========================================= */
+
+.card-content hr {
+    margin: 20px 0;
+
+    border: none;
+
+    height: 1px;
+
+    background: #e5e5e5;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.description {
+    max-width: 780px;
+
+    margin: 0 0 25px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #666;
+}
+
+
+/* =========================================
+   CERTIFICATE BUTTON
+========================================= */
+
+.certificate-btn {
+    padding: 13px 23px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #111;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.certificate-btn:hover {
+    transform: translateY(-3px);
+
+    background: #333;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .Recognition {
+        padding: 100px 6% 60px;
+    }
+
+    .Recognition h2 {
+        font-size: 40px;
+    }
+
+    .zrchivment-section {
+        padding: 30px 6% 80px;
+    }
+
+    .card {
+        max-width: 650px;
+    }
+
+    .card-top {
+        min-height: 160px;
+
+        padding: 25px 30px;
+    }
+
+    .prize,
+    .nptel {
+        font-size: 27px;
+    }
+
+    .card-content {
+        padding: 30px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .Recognition {
+        min-height: auto;
+
+        padding: 90px 5% 50px;
+    }
+
+    .Recognition h6 {
+        font-size: 12px;
+    }
+
+    .Recognition h2 {
+        font-size: 34px;
+
+        line-height: 1.2;
+
+        margin-bottom: 25px;
+    }
+
+    .Recognition>button {
+        display: block;
+
+        width: 100%;
+
+        margin: 10px auto;
+
+        padding: 12px 15px;
+    }
+
+
+    /* Tabs */
+
+    .zrchivment-section {
+        padding: 25px 5% 60px;
+    }
+
+    .tabs {
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 10px;
+    }
+
+    .tabs button {
+        width: 100%;
+
+        padding: 12px 15px;
+    }
+
+
+    /* Card */
+
+    .card {
+        border-radius: 17px;
+    }
+
+    .card-top {
+        min-height: 140px;
+
+        padding: 25px 20px;
+    }
+
+    .prize,
+    .nptel {
+        font-size: 21px;
+    }
+
+    .trophy {
+        width: 58px;
+        height: 58px;
+
+        font-size: 28px;
+    }
+
+    .card-content {
+        padding: 25px 20px 30px;
+    }
+
+    .date {
+        font-size: 13px;
+    }
+
+    .card-content h1 {
+        font-size: 25px;
+    }
+
+    .card-content h3 {
+        font-size: 13px;
+    }
+
+    .description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .certificate-btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .Recognition {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .Recognition h2 {
+        font-size: 30px;
+    }
+
+    .zrchivment-section {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .card-top {
+        padding: 22px 17px;
+    }
+
+    .prize,
+    .nptel {
+        font-size: 18px;
+    }
+
+    .trophy {
+        width: 50px;
+        height: 50px;
+
+        font-size: 24px;
+    }
+
+    .card-content {
+        padding: 22px 17px 25px;
+    }
+
+    .card-content h1 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,254 @@
+/* =========================
+   EDUCATION SECTION
+========================= */
+
+.education {
+    padding: 90px 10%;
+    background: #f7f8fc;
+    text-align: center;
+}
+
+/* Section small heading */
+.education>h6:first-child {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* My Background */
+.education>h2 {
+    margin: 8px 0;
+    color: #1a1a1a;
+}
+
+.education>h2 i {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+/* Degree */
+.education>h6:nth-of-type(2) {
+    margin-top: 35px;
+    font-size: 16px;
+    color: #555;
+}
+
+.education>h2:nth-of-type(2) {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Location */
+location {
+    display: block;
+    color: #777;
+    font-size: 15px;
+    margin: 8px 0 15px;
+}
+
+/* Date button */
+.education button {
+    border: none;
+    padding: 9px 18px;
+    border-radius: 20px;
+    background: #e9ecf5;
+    color: #333;
+    font-size: 14px;
+    margin: 5px;
+    cursor: default;
+}
+
+
+/* =========================
+   STATUS CARDS
+========================= */
+
+.education .status {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+
+    width: 220px;
+    min-height: 150px;
+
+    margin: 35px 10px 25px;
+    padding: 25px 20px;
+
+    background: #ffffff;
+    border: 1px solid #e3e5eb;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.education .status:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.13);
+}
+
+/* Status heading */
+.status h5 {
+    margin: 0 0 12px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #777;
+}
+
+/* Main number/text */
+.status h1,
+.status h2 {
+    margin: 5px 0;
+    color: #111;
+}
+
+/* Small text */
+.status h6 {
+    margin-top: 8px;
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* =========================
+   KEY COURSEWORK
+========================= */
+
+.education>h5 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #555;
+}
+
+/* Course buttons */
+.education>button {
+    background: #ffffff;
+    border: 1px solid #dcdfe7;
+    color: #333;
+    padding: 10px 18px;
+    border-radius: 25px;
+
+    transition: all 0.3s ease;
+}
+
+.education>button:hover {
+    background: #111;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SCHOOLING SECTION
+========================= */
+
+.schooling {
+    padding: 80px 10%;
+    background: #ffffff;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+
+}
+
+/* School cards */
+.schooling .status {
+    width: 400px;
+    padding: 30px;
+
+    background: #f8f9fc;
+
+    border: 1px solid #e1e3e8;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.3s ease;
+}
+
+/* School hover */
+.schooling .status:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* School heading */
+.schooling .status h5 {
+    color: #777;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* School name */
+.schooling .status h2 {
+    font-size: 23px;
+    margin: 10px 0;
+    color: #111;
+}
+
+/* School date */
+.schooling .status button {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .education {
+        padding: 60px 5%;
+    }
+
+    .education>h2 i {
+        font-size: 30px;
+    }
+
+    .education>h2:nth-of-type(2) {
+        font-size: 24px;
+    }
+
+    .education .status {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .schooling {
+        padding: 60px 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .schooling .status {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .education>h2 i {
+        font-size: 26px;
+    }
+
+    .education .status,
+    .schooling .status {
+        width: 90%;
+    }
+
+    .education>button {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}

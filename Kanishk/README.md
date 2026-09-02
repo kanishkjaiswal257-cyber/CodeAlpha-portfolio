@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
@@ -15,41 +14,3 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the Oxlint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-=======
-# Personal Portfolio Website
-
-A modern and responsive personal portfolio application with an interactive React frontend and an Express.js backend for contact form email handling.
-
-## Project Structure
-
-- **`Kanishk/`**: Frontend built with React, Vite, and CSS animations.
-- **`portfolio-backend/`**: Node.js / Express backend server handling contact messages via Nodemailer.
-
----
-
-## Getting Started
-
-### 1. Frontend Setup
-```bash
-cd Kanishk
-npm install
-npm run dev
-```
-
-### 2. Backend Setup
-```bash
-cd portfolio-backend
-npm install
-```
-
-Create a `.env` file in `portfolio-backend/` based on `.env.example`:
-```env
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_gmail_app_password
-```
-
-Start the backend server:
-```bash
-node server.js
-```
->>>>>>> 48223c71195bce298c01dbf376fab304f217c08e

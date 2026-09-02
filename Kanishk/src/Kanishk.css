@@ -1,0 +1,416 @@
+/* =================================
+   GLOBAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #111;
+}
+
+.portfolio {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* =================================
+   FIXED PROFESSIONAL NAVBAR
+================================= */
+
+.navbar {
+    width: 92%;
+    height: 70px;
+
+    position: fixed;
+    top: 15px;
+    left: 4%;
+
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(17, 17, 17, 0.92);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.20);
+
+    transition: all 0.3s ease;
+}
+
+
+/* =================================
+   NAVIGATION LINKS
+================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-links a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #d5d5d5;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    padding: 8px 2px;
+
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
+/* Animated underline */
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    transform: translateX(-50%);
+
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 130px 10% 80px;
+
+    background: #f7f8fc;
+}
+
+
+/* =================================
+   HERO TEXT
+================================= */
+
+.hero-text {
+    width: 55%;
+}
+
+/* IMPORTANT:
+   Your JSX has className="hero" on h1.
+   So use .hero-text .hero for the heading.
+*/
+
+.hero-text .hero {
+    min-height: auto;
+
+    display: block;
+
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    color: #111;
+
+    margin-bottom: 15px;
+
+    background: transparent;
+}
+
+
+/* Subtitle */
+
+.hero-text h2 {
+    font-size: 27px;
+
+    font-weight: 500;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+
+/* Description */
+
+.description {
+    max-width: 650px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #666;
+
+    margin-bottom: 35px;
+}
+
+
+/* =================================
+   RESUME BUTTON
+================================= */
+
+.resume-btn {
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #111;
+
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: #333;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.resume-btn:active {
+    transform: translateY(-1px);
+}
+
+
+/* =================================
+   PROFILE IMAGE
+================================= */
+
+.hero-image {
+    width: 40%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #111;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.20);
+
+    transition: all 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        width: 94%;
+        left: 3%;
+    }
+
+    .nav-links {
+        gap: 28px;
+    }
+
+    .hero {
+        padding: 120px 6% 70px;
+    }
+
+    .hero-text {
+        width: 55%;
+    }
+
+    .hero-text .hero {
+        font-size: 48px;
+    }
+
+    .hero-text h2 {
+        font-size: 23px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        width: 94%;
+        height: 60px;
+
+        left: 3%;
+        top: 10px;
+
+        border-radius: 14px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    /* Hero becomes vertical */
+
+    .hero {
+        min-height: auto;
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding: 110px 6% 60px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        margin-bottom: 40px;
+    }
+
+    .hero-image img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .hero-text .hero {
+        font-size: 42px;
+    }
+
+    .hero-text h2 {
+        font-size: 21px;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .resume-btn {
+        padding: 12px 24px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        height: 58px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero-text .hero {
+        font-size: 35px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+}
